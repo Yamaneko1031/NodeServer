@@ -14,7 +14,10 @@
 // // 指定したIPアドレス、ポート番号でサーバを立てる
 // server.listen(8000, "127.0.0.1");
 
-import { AccessToken } from "livekit-server-sdk";
+// import { AccessToken } from "livekit-server-sdk";
+const livekitApi = require("livekit-server-sdk");
+const AccessToken = livekitApi.AccessToken;
+const RoomServiceClient = livekitApi.RoomServiceClient;
 
 const roomName = "name-of-room";
 const participantName = "user-name";
